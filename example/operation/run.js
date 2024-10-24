@@ -2,5 +2,9 @@
 
 import init, { add_two_ints } from './out/operation.js';
 
-await init();
-console.log(utils.add_two_ints(1, 2));
+async function run() {
+    await init();
+        console.log('2 + 3 =', add_two_ints(2, 3));
+}
+
+run();
