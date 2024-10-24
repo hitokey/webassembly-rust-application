@@ -5,8 +5,8 @@ let wasm;
  * @param {number} b
  * @returns {number}
  */
-export function add(a, b) {
-    const ret = wasm.add(a, b);
+export function add_two_ints(a, b) {
+    const ret = wasm.add_two_ints(a, b);
     return ret;
 }
 

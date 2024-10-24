@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rust + WebAssembly App</title>
+</head>
+<body>
+    <script type="module">
+        import init, { add_two_ints } from './out/operation.js';
+        
+        async function run() {
+            await init();
+            
+            // Teste da função somar
+            console.log('2 + 3 =', add_two_ints(2, 3));
+        }
+        
+        run();
+    </script>
+</body>
+</html>

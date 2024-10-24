@@ -5,13 +5,13 @@
  * @param {number} b
  * @returns {number}
  */
-export function add(a: number, b: number): number;
+export function add_two_ints(a: number, b: number): number;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly add: (a: number, b: number) => number;
+  readonly add_two_ints: (a: number, b: number) => number;
   readonly __wbindgen_export_0: WebAssembly.Table;
   readonly __wbindgen_start: () => void;
 }
